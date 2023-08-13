@@ -70,8 +70,8 @@ body {
 .nav {
     margin: 0;
     padding: 0;
-    text-align: center;
     list-style-type: none;
+    text-align: center;
 }
 
 .nav .nav-item {
@@ -88,7 +88,7 @@ body {
     padding: 0.5rem 1rem;
 }
 
-.nav.nav-link:hover {
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
 
