@@ -1,4 +1,4 @@
-/* removing text decoration for anchor element */
+/* custom properties for the section margin and color */
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -27,6 +27,12 @@ html {
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
+
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+
 }
 
 body {
@@ -48,7 +54,24 @@ h1, h2, h3, h4, h5, h6 {
 .visually-hidden {
     display: none;
 }
+.section-header {
+    text-align: var(--section-header-align);
+}
+.card-category {
+    color: var(--color-primary);
+}
 
-.card-category, .section-tagline {
-    color: var(--color-primary)
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
 }
