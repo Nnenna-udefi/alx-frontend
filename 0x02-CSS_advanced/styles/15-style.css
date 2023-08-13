@@ -1,5 +1,9 @@
-/* importing normalize.css */
+/* adding universal box-sizing rule */
 @import './normalize.css';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
