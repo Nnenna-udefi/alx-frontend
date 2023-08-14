@@ -1,4 +1,4 @@
-/* dark section theme styling */
+/* select classes starting with col- */
 
 @import './normalize.css';
 
@@ -156,12 +156,6 @@ h1, h2, h3, h4, h5, h6 {
     clear:both;
 }
 
-[data-section-theme="dark"] {
-    --text-color: var(--color-white);
-    --section-title-color: var(--color-white);
-    background-color: var(--color-black);
-}
-
 ul.row {
     margin: 0;
     padding: 0;
@@ -181,6 +175,11 @@ ul.row {
     padding: 0.5rem;
 }
 
+[data-section-theme=“dark”] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
 
 .footer-copyright {
     margin: 0;
@@ -199,4 +198,29 @@ ul.row {
 
 .footer {
     padding: var(--footer-padding);
+}
+.footer-address {
+    color: var(--text-color);
+}
+.social-link {
+    display: block;
+}
+.social-link > svg {
+    fill: var(--text-color);
+}
+
+.card-services > .card-title {
+    margin: 0;
+}
+
+.card-services > a {
+    display: block;
+    padding: 2em;
+    background-color: var(--color-light-grey);
+}
+
+.card-services > a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
 }
