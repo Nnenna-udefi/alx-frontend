@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 .card-work .card-title a {
     display: block;
     text-decoration: none;
-    padding-top: 0.45rem;
+    padding-top: 45%;
 }
 
 .card-work .card-title a::after {
