@@ -199,6 +199,10 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.card-category {
+    color: var(--color-primary);
+}
+
 .card-testimonial {
     text-align: center;
 }
@@ -213,6 +217,20 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     padding-top: 1rem;
     color: var(--color-primary);
+}
+
+.card-testimonial .card-quote {
+    position: relative;
+}
+
+.card-testimonial .card-quote::before {
+    content: '\201C';
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
 }
 
 .card-work .card-outer {
@@ -276,19 +294,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(0.95);
 }
 
-.card-testimonial .card-quote {
-    position: relative;
-}
-
-.card-testimonial .card-quote::before {
-    content: '\201C';
-    position: absolute;
-    top: -4.5rem;
-    left: -1rem;
-    color: #efeded;
-    font-size: 10rem;
-    z-index: -1;
-}
 .section {
     padding: var(--section-padding);
 }
@@ -302,10 +307,6 @@ h1, h2, h3, h4, h5, h6 {
 .section-footer {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
-}
-
-.card-category {
-    color: var(--color-primary);
 }
 
 .section-title {
